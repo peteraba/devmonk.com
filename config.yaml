@@ -1,0 +1,11 @@
+---
+indexes:
+    tag: "tags"
+    topic: "topics"
+    section: "sections"
+    lang: "langs"
+taxonomies:
+    tag: "tags"
+baseurl: ""
+title: "DevMonk"
+...

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+
+    {{ template "chrome/meta.html" . }}
+
+    <base href="{{ .Site.BaseUrl }}">
+    <title>{{ .Site.Title }}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+    {{ template "chrome/head_includes.html" . }}
+</head>
+<body lang="en">
+
+{{ template "chrome/subheader.html" . }}
+
+
+<div class="row">
+    <div class="col-md-6">
+        <section id="main">
+            <h2 id="title">english videos</h2>
+            <div>
+                {{ range .Site.Indexes.langs.en.Pages }}
+                    {{ .Render "summary"}}
+                {{ end }}
+            </div>
+        </section>
+    </div>
+    <div class="col-md-6">
+        <section id="main">
+            <h2 id="title">magyar videók</h2>
+            <div>
+                {{ range .Site.Indexes.langs.hu.Pages }}
+                    {{ .Render "summary"}}
+                {{ end }}
+            </div>
+        </section>
+    </div>
+</div>
+
+{{ template "chrome/footer.html" . }}
