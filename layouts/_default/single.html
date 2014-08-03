@@ -14,10 +14,17 @@
                 </span>
             {{ end }}
             </div>
-            <div id="tags">
-            {{ range .Params.tags }}
+            <div id="categories">
+            {{ range .Params.categories }}
                 <span>
-                    <a href="{{ $baseurl }}/tags/{{ . | urlize }}" class="btn btn-primary btn-xs">{{ . }}</a>
+                    <a href="{{ $baseurl }}/categories/{{ . | urlize }}" class="btn btn-primary btn-xs">{{ . }}</a>
+                </span>
+            {{ end }}
+            </div>
+            <div id="kategoriak">
+            {{ range .Params.kategoriak }}
+                <span>
+                    <a href="{{ $baseurl }}/kategoriak/{{ . | urlize }}" class="btn btn-primary btn-xs">{{ . }}</a>
                 </span>
             {{ end }}
             </div>

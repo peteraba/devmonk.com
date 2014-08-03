@@ -1,11 +1,14 @@
 ---
 indexes:
-    tag: "tags"
+    category: "categories"
+    kategoria: "kategoriak"
     topic: "topics"
     section: "sections"
     lang: "langs"
 taxonomies:
-    tag: "tags"
+    category: "categories"
+    kategoria: "kategoriak"
 baseurl: ""
-title: "DevMonk"
+hu: "http://localhost:1313/hu/"
+title: "devmonk"
 ...

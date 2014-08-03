@@ -1,12 +1,26 @@
-{{ template "chrome/header.html" . }}
-<body lang="en">
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+
+    {{ template "chrome/meta.html" . }}
+
+    <base href="{{ .Site.BaseUrl }}">
+    <title>{{ .Site.Title }} - magyar videók</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+    {{ template "chrome/head_includes.html" . }}
+</head>
+<body lang="hu">
+
 {{ template "chrome/subheader.html" . }}
 
     <section id="main">
         <h1 id="title">magyar videók</h1>
         <div>
             {{ range first 100 .Data.Pages }}
-                {{ .Render "summary" }}
+                {{ .Render "full_summary" }}
             {{ end }}
         </div>
     </section>
