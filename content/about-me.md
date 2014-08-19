@@ -1,14 +1,14 @@
-{
-    "title": "About me",
-    "description": "About me",
-    "keywords": [],
-    "pubdate": "2014-08-01",
-    "date": "2014-08-01",
-    "topics": [],
-    "url": "about-me",
-    "slug": "about-me"
-}
-
++++
+draft = false
+title = "About me",
+description = "About me",
+keywords = [],
+pubdate = "2014-08-01",
+date = "2014-08-01",
+topics = [],
+url = "about-me",
+slug = "about-me"
++++
 ### The Craftsman ###
 
 My name is **Peter Aba** and I'm a developer since 2002. I always liked learning about my craft and believed in life long learning. 
