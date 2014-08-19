@@ -1,3 +1,6 @@
+.author {text-align: justify;}
+.author img {border: 1px solid #555; width: 60%;}
+
 article header h2 a, article header h2 a:hover {color: #ddd; text-transform: lowercase}
 
 .main-container {padding-bottom: 5em;}
