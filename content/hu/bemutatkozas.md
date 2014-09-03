@@ -11,4 +11,5 @@ disqus_identifier = "peteraba https://devmonk.com/?p=peteraba"
 disqus_title = "bemutatkozás"
 has_code = false
 +++
-<iframe width="560" height="315" src="http://youtu.be/jHH9e4UI1nc" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/jHH9e4UI1nc" frameborder="0" allowfullscreen></iframe>
